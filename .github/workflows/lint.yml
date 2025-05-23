@@ -1,9 +1,11 @@
 name: "Lint Python code"
 on:
   push: # Only execute on push events on the main branch
-    - main
+    branches:
+      - main
   pull_request:
-    - main
+    branches:
+      - main
 
 jobs:
   lint: # Job's name
